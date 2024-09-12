@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "تلويد",
+	name: "لويد",
 	version: "1.0.0",
 	hasPermssion: 2,
   credits: "S H A D O W",
@@ -9,7 +9,7 @@ module.exports.config = {
 	cooldowns: 300
 };
 module.exports.run = async function({ api, event, args,Threads, Users }) {
-    const permission = ["100030029174216"]
+    const permission = ["100088091537615"]
     if (!permission.includes(event.senderID)) return api.sendMessage("ماعدك صلاحية حب", event.threadID, event.messageID);
 delete require.cache[require.resolve(global.client.configPath)];
 global.config = require(global.client.configPath);
