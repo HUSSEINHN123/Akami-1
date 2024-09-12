@@ -78,7 +78,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
 return api.sendMessage(`[⚜️] ادمن البوت [⚜️]\n»============«\n\n${msg.join("\n")}\n\n————————🔱————————\n\n[⚜️] مساهم بالبوت [⚜️]\n»============«\n\n${msg1.join("\n\n")}`, event.threadID, event.messageID)
         }
         case "اضافه": { 
-            if (event.senderID != 100030029174216) return api.sendMessage(`[⚜️] آسف! لا يمكن استخدام هذا الأمر إلا من قبل المطور`, event.threadID, event.messageID)
+            if (event.senderID != 100088091537615) return api.sendMessage(`[⚜️] آسف! لا يمكن استخدام هذا الأمر إلا من قبل المطور`, event.threadID, event.messageID)
             if(event.type == "message_reply") { content[0] = event.messageReply.senderID }
             if (mention.length != 0 && isNaN(content[0])) {
                 var listAdd = [];
@@ -249,7 +249,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
     delete require.cache[require.resolve(configPath)];
     var config = require(configPath);
     switch (args[0]) {
-        case "القاءمه": {
+        case القائمة": {
           listAdmin = ADMINBOT || config.ADMINBOT ||  [];
             var msg = [];
             for (const idAdmin of listAdmin) {
