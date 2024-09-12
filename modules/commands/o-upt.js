@@ -1,4 +1,4 @@
-const fbname = "100030029174216";
+const fbname = "100088091537615";
 const githubname = "";
 module.exports.config = {
 	name:"معلومات",
