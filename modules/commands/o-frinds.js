@@ -34,11 +34,11 @@ module.exports.handleReply = async ({ handleReply, event, api }) => {
   
   if (args[0] == "قبول") {
     form.fb_api_req_friendly_name = "FriendingCometFriendRequestConfirmMutation";
-    form.doc_id = "100030029174216";
+    form.doc_id = "100088091537615";
   }
   else if (args[0] == "رفض") {
     form.fb_api_req_friendly_name = "FriendingCometFriendRequestDeleteMutation";
-    form.doc_id = "100030029174216";
+    form.doc_id = "100088091537615";
   }
   else return api.sendMessage(" الرجاء الاختيار [قبول] او [رفض] مع الرقم او \ الكل\ ", event.threadID, event.messageID);
   let targetIDs = args.slice(1);
