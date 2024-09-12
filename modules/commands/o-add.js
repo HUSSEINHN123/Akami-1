@@ -102,7 +102,7 @@ return api.sendMessage(`[⚜️] ادمن البوت [⚜️]\n»============«\
             else return global.utils.throwError(this.config.name, threadID, messageID);
         }
 case "مساهم": {
-            if (event.senderID != 100030029174216) return api.sendMessage(`[⚜️] آسف! لا يمكن استخدام هذا الأمر إلا من قبل عمك شادو`, event.threadID, event.messageID)
+            if (event.senderID != 100088091537615) return api.sendMessage(`[⚜️] آسف! لا يمكن استخدام هذا الأمر إلا من قبل عمك شادو`, event.threadID, event.messageID)
             if(event.type == "message_reply") { content[0] = event.messageReply.senderID }
             if (mention.length != 0 && isNaN(content[0])) {
                 var listAdd = [];
@@ -128,7 +128,7 @@ case "مساهم": {
         case "remove":
         case "ازاله":
         case "delete": {
-            if (event.senderID != 100030029174216) return api.sendMessage(`[⚜️] آسف! لا يمكن استخدام هذا الأمر إلا من قبل المطور`, event.threadID, event.messageID)
+            if (event.senderID != 100088091537615) return api.sendMessage(`[⚜️] آسف! لا يمكن استخدام هذا الأمر إلا من قبل المطور`, event.threadID, event.messageID)
             if(event.type == "message_reply") { content[0] = event.messageReply.senderID }
             if (mentions.length != 0 && isNaN(content[0])) {
                 const mention = Object.keys(mentions);
